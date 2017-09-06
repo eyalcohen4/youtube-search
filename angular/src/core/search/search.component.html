@@ -1,0 +1,10 @@
+<div class="search">
+
+  <input
+    type="text"
+    class="search__input search__input--shadow search__input--full-width"
+    [(ngModel)]="value"
+    (ngModelChange)="search(value)"
+    placeholder="{{ value }}">
+
+</div>
