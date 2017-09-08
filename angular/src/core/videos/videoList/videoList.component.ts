@@ -4,7 +4,7 @@ import { YoutubeService } from '../../youtube/youtube.service';
 @Component({
   selector: 'video-list',
   templateUrl: './videoList.component.html',
-  providers: [],
+  styleUrls: ['./videoList.component.scss'],
 })
 
 export class VideoListComponent implements OnInit {
@@ -13,7 +13,5 @@ export class VideoListComponent implements OnInit {
   constructor(private youtube: YoutubeService) {
   }
 
-  ngOnInit() {
-    console.log(this.youtube.list);
-  }
+  ngOnInit() {}
 }

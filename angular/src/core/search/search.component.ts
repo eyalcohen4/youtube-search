@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { YoutubeService } from '../youtube/youtube.service';
 
 export interface YTResponse {
@@ -11,7 +11,7 @@ export interface YTResponse {
   styleUrls: ['./search.component.scss'],
   providers: [],
 })
-export class SearchComponent {
+export class SearchComponent implements OnInit {
 
   private value: string = 'Angular';
 
@@ -19,5 +19,9 @@ export class SearchComponent {
 
   search() {
     this.youtube.search(this.value);
+  }
+
+  ngOnInit() {
+    this.search();
   }
 }

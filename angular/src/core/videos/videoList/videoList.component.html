@@ -1,5 +1,5 @@
 <ul class="video-list">
   <li *ngFor="let video of youtube.list">
-    {{ video.id.videoId }}
+    <thumbnail [item]="video"></thumbnail>
   </li>
 </ul>

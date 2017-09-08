@@ -1,0 +1,14 @@
+<div class="thumbnail" (click)="play(item)">
+
+  <img class="thumbnail__image" [src]="item.snippet.thumbnails.default.url">
+
+  <div class="thumbnail__content">
+    <p class="thumbnail__content__title"> {{ item.snippet.title }} </p>
+
+    <div class="thumbnail__content__subtitle">
+      <span class="thumbnail__content__subtitle__channel"> {{ item.snippet.channelTitle }}</span>
+      <span class="thumbnail__content__subtitle__date"> {{ date }} </span>
+    </div>
+  </div>
+
+</div>
