@@ -1,12 +1,24 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <header>
+      <search></search>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
   </div>
 </template>
 
 <script>
+
+import Search from './components/Search';
+
 export default {
   name: 'app',
+  components: {
+    search: Search,
+  },
 };
 </script>
 
