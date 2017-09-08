@@ -4,12 +4,9 @@
   justify-content: center;
   margin: 15px;
   padding: 0 5px;
-  width: 210px;
-  border-bottom: 1px solid #444;
-
-  &:hover {
-    box-shadow: 0 1px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24);
-  }
+  width: 450px;
+  box-shadow: 0 3px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24);
+  cursor: pointer;
 
   &__image {
     max-width: 100%;
@@ -20,6 +17,7 @@
   &__content {
     display: flex;
     flex-direction: column;
+    flex: 1;
 
     &__title {
       font-size: 1em;
@@ -28,6 +26,7 @@
 
     &__subtitle {
       display: flex;
+      flex-direction: column;
       padding: 5px;
       color: #444;
 
@@ -37,10 +36,6 @@
 
       &__date {
         font-size: 0.75em;
-
-        &:before {
-          content: '*';
-        }
       }
     }
   }

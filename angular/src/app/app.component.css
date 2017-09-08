@@ -1,1 +1,8 @@
 @import '../styles/main.scss';
+
+.app__player, .app__list {
+  display: flex;
+  justify-content: center;
+}
+
+
