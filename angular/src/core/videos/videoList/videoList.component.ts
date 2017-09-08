@@ -4,7 +4,7 @@ import { YoutubeService } from '../../youtube/youtube.service';
 @Component({
   selector: 'video-list',
   templateUrl: './videoList.component.html',
-  providers: [YoutubeService],
+  providers: [],
 })
 
 export class VideoListComponent implements OnInit {

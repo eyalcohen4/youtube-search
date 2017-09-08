@@ -5,7 +5,7 @@ import { YoutubeModule } from '../youtube/youtube.module';
 import { VideoListComponent } from './videoList/videoList.component';
 
 @NgModule({
-  imports: [YoutubeModule, CommonModule],
+  imports: [CommonModule],
   exports: [VideoListComponent],
   declarations: [VideoListComponent],
   providers: [],

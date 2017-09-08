@@ -9,7 +9,7 @@ export interface YTResponse {
   selector: 'search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss'],
-  providers: [YoutubeService],
+  providers: [],
 })
 export class SearchComponent {
 

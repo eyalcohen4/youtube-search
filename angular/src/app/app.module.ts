@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SearchModule } from 'core/search/search.module';
 import { VideosModule } from 'core/videos/videos.module';
+import { YoutubeModule } from 'core/youtube/youtube.module';
+import { YoutubeService } from 'core/youtube/youtube.service';
 
 @NgModule({
   declarations: [
@@ -13,8 +15,9 @@ import { VideosModule } from 'core/videos/videos.module';
     BrowserModule,
     SearchModule,
     VideosModule,
+    YoutubeModule,
   ],
-  providers: [],
+  providers: [YoutubeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
