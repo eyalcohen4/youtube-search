@@ -1,5 +1,7 @@
 <template>
-  <input type="text" v-model="query" @keydown="search">
+  <div class="search">
+    <input type="text" class="search__input" v-model="query" @keydown="search">
+  </div>
 </template>
 
 <script>
@@ -12,8 +14,7 @@ export default {
   },
   methods: {
     search() {
-      console.log(this.$store);
-      this.$store.dispatch('query', this.query);
+      this.$store.dispatch('search', this.query);
     },
   },
 };

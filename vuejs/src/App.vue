@@ -4,7 +4,14 @@
       <search></search>
     </header>
 
-    <main></main>
+    <main>
+      <div class="app__player">
+        <player class="app__player"></player>
+      </div>
+      <div class="app__video-list">
+        <video-list></video-list>
+      </div>
+    </main>
 
     <footer></footer>
   </div>
@@ -12,12 +19,16 @@
 
 <script>
 
+import Player from './components/Player';
 import Search from './components/Search';
+import VideoList from './components/Video-List';
 
 export default {
   name: 'app',
   components: {
     search: Search,
+    videoList: VideoList,
+    player: Player,
   },
 };
 </script>
@@ -29,6 +40,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

@@ -1,0 +1,20 @@
+.search {
+  display: flex;
+  justify-content: center;
+
+  &__input {
+    display: block;
+    height: 25px;
+    padding: 0 8px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+
+    &:focus, &:active, &:hover {
+      width: 70%;
+    }
+  }
+
+}
