@@ -12,7 +12,6 @@ export default {
     youtube.createPlayer();
   },
   mounted() {
-    console.log();
     if (this.currentVideo && this.currentVideo.id) {
       youtube.playVideo(this.currentVideo.id.videoId);
     }
