@@ -1,0 +1,27 @@
+html, body {
+  height: 100vh;
+}
+
+header {
+  grid-row-start: 1;
+  height: 45px;
+  background: blue;
+}
+
+main {
+  padding: 0 25px;
+  grid-row-start: 2;
+  margin: 15px 20px;
+}
+
+footer {
+  grid-row-start: 3;
+}
+
+.root {
+  display: grid;
+  grid-template-rows: 100px 1fr 100%;
+  min-height: 100vh;
+  margin: 0
+}
+
